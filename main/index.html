@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>Color the text in the element with your favorite color name</p>
+  <p style="color: hsl(300 85 75);">pink</p>
+  <p style="color: hsl(230 43 25);">deep blue</p>
+  <p style="color: hsl(60 90 75);">pastel yellow</p>
+  <p style="color: hsl(100 80 80);">soft green</p>
+   
+  <p style="color: hsl(270 60 70);">purple</p>
+  <button>Button</button>
+
+  <style>
+    button {
+      --h: 330;
+      --s: 80%;
+      --l: 45%;
+      --a: 1;
+      background-color: hsl(var(--h) var(--s) var(--l) / var(--a));
+      border: none;
+      text-decoration: none;
+      font-size: 4em;
+      padding: 0.2em 0.5em;
+      transition: all 0.3s ease;
+      border-radius: 0.2em;
+
+      &:hover {
+        --l: 75%;
+        --h: 280;
+      }
+      &:focus, &:active {
+        --s: 75%;
+      }
+      &[disabled] {
+        --l: 0%;
+        --a: 0.5;
+      }
+    }
+
+      body {
+        /* background-color: hsl(0, 0, 100); */
+        background-color: hsl(0 0 10);
+      }
+
+      p {
+        font-size: 4em;
+      }
+  </style>
+</body>
+</html>
