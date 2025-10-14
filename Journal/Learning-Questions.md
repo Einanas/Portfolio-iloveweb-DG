@@ -1,4 +1,4 @@
-# ✒️Educational Questions
+# ✒️Learning Questions
 
 ## Sprint 14 Lose Your Head - The Client Case
 **How did you prepare for the sprint review?**  
