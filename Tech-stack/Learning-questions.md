@@ -1,5 +1,17 @@
 # ✒️ Learning Questions about Frameworks
 
+###
+**You want to explore your framework about your experience using these three perspectives:**
+- DX
+- UX
+- CMX (content-management-experience)  
+
+**What you can pay attention to is:**
+- Responsive,
+- Progressive Enhancement,
+- Accessibility,
+- Interface.
+
 ## 11ty Framework
 - What steps do you take to try out a new framework?
   1. *First, you want to follow the steps of installment of the framework which you can follow step by step. The one i used is [11ty.rocks](https://11ty.rocks/posts/create-your-first-basic-11ty-website/#run-the-develop-server).*
