@@ -14,7 +14,7 @@
    
   <p style="color: hsl(270 60 70);">purple</p>
   <button>Button</button>
-  <a href="/public/index.html"></a>
+  <a style="color: hsl(30 90 75)" href="/public/index.html">to 11ty setup</a>
 
   <style>
     button {
@@ -51,6 +51,31 @@
       p {
         font-size: 4em;
       }
+      
+      a {
+      --h: 30;
+      --s: 90%;
+      --l: 75%;
+      --a: 1;
+      font-size: 4em;
+      text-decoration: none;
+      background-color: hsl(var(--h) var(--s) var(--l) / var(--a));
+      transition: all 0.3s ease;
+      color: inherit;
+      padding: 0.1em 0.2em;
+      border-radius: 0.1em;
+    }
+    a:hover {
+      --l: 75%;
+      --h: 210;
+    }
+    a:focus, a:active {
+      --s: 75%;
+    }
+    a[disabled] {
+      --l: 0%;
+      --a: 0.5;
+    }
   </style>
 </body>
 </html>
